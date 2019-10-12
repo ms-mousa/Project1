@@ -45,7 +45,7 @@ a {
     background-position: bottom;
     background-size: cover;
     overflow: scroll;
-    height: 150vh;
+    height: 105vh;
     max-height: 900px;
 }
 
@@ -54,7 +54,8 @@ a {
 
 header {
     margin: 0 auto;
-    width: 60vw;
+    width: 80vw;
+    max-width: 1100px;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -264,16 +265,15 @@ header {
 
 /* second section for features */
 
-.fetur {
-    max-height: 600px;
-    width: 60vw;
+.screen {
+    width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .points3 {
@@ -291,6 +291,7 @@ header {
 /* modifiers for text inside each section */
 
 .section--main {
+    margin-top: 20px;
     color: #648cff;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -336,17 +337,23 @@ header {
 .imgcon {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .imgcon__arrow {
-    align-content: flex-end;
+    justify-content: flex-start;
+}
+
+.arrow--big {
+    font-size: 5rem;
+    color: gray;
 }
 
 .img1 {
     position: absolute;
     z-index: -1;
+    transform-origin: center center;
     transform: translate(-180px, 50px);
     box-shadow: 6px 10px 30px rgba(191, 80, 255, 0.267);
     border-radius: 9px;
@@ -361,6 +368,71 @@ header {
     border-radius: 9px;
     position: absolute;
     z-index: -1;
-    transform: translate(-180px, 50px);
+    transform-origin: center center;
+    transform: translate(-140px, 50px);
     box-shadow: 6px 10px 30px rgba(191, 80, 255, 0.267);
+}
+
+
+/* styles for cloudy section */
+
+.screencon {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.screencon__text {
+    flex: 0 1 70%;
+    align-self: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.screencon__bubble {
+    position: relative;
+    background: white;
+    color: #c3cfe5;
+    text-align: center;
+    box-shadow: 5px 2px 20px rgba(197, 197, 197, 0.5);
+    border-radius: 50%;
+}
+
+
+/* bubble container to fit horizintally */
+
+.bubbleCon {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* getting the bubbles to align */
+
+.screencon__bubble:nth-child(2) {
+    z-index: -1;
+    left: -10px;
+}
+
+.screencon__bubble:nth-child(3) {
+    z-index: -2;
+    left: -20px;
+}
+
+
+/* text modifiers for screen sections */
+
+.text--sub {
+    color: gray;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+}
+
+.order2 {
+    order: 2;
 }

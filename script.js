@@ -14,3 +14,11 @@ $(window).scroll(function() {
 $(document).ready(function() {
     $('.scrll--shadow').css({ "animation": "bounce 2s infinite" });
 });
+
+// $(document).ready(function() {
+//     document.querySelector(".arrow--big").addEventListener("click", function() {
+//         $(".fimg").removeClass("img1").addClass("img2");
+//         $(".simg").removeClass("img2").addClass("img1");
+
+//     })
+// })
