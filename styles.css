@@ -19,6 +19,18 @@ a {
     color: white;
 }
 
+.text--red {
+    color: #fc6a42;
+}
+
+.text--blue {
+    color: #648cff;
+}
+
+.text--grey {
+    color: #e1e1e1;
+}
+
 .text--big {
     font-weight: 900;
     font-size: 2.5rem;
@@ -474,4 +486,99 @@ header {
 .quote__person {
     font-size: 1rem;
     font-weight: 250;
+}
+
+
+/* styles for the download section */
+
+.dwn {
+    width: 100%;
+    background: #648cff;
+    overflow: hidden;
+    height: 450px;
+}
+
+.dwn__con {
+    width: 80vw;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action--text {
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.action--moto {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+}
+
+.con__action {
+    flex: 40%;
+    padding-right: 40px;
+}
+
+.con__action img {
+    display: inline;
+    margin: 40px 20px;
+}
+
+.con__screens {
+    flex: 60%;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.con__screens img {
+    width: 100%;
+    min-width: 500px;
+    height: auto;
+}
+
+
+/* styles for footer */
+
+footer {
+    width: 100%;
+    background: #353854;
+}
+
+.footer__con {
+    height: 350px;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+}
+
+.footer__1 {
+    flex: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__copyrights {
+    flex: 40%;
+    justify-self: center;
+    padding-top: 20px;
+    border-top: 2px solid #c8c8c8a8;
+    text-align: right;
 }
