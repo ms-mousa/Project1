@@ -3,6 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
     text-decoration: none;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
@@ -50,6 +55,8 @@ a {
 /* full width intro with BG img */
 
 .intro {
+    position: relative;
+    top: -20px;
     width: 100%;
     margin: 0 auto;
     background: url(./img/bg-3x.png);
@@ -626,6 +633,7 @@ footer {
         background: #648cff;
     }
     .topBar {
+        top: 0px;
         margin-bottom: 20px;
         position: fixed;
         width: 100%;
@@ -823,6 +831,7 @@ footer {
         background: #648cff;
     }
     .topBar {
+        top: 0px;
         justify-content: space-around;
         margin-bottom: 20px;
         position: fixed;

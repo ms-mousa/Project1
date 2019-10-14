@@ -19,6 +19,7 @@ $(document).ready(function() {
     var imageup = document.getElementsByClassName("parallax");
     new simpleParallax(imageup, {
         overflow: true,
+        scale: 1.5
     });
     var imagert = document.getElementsByClassName('parallaxRt');
     new simpleParallax(imagert, {
