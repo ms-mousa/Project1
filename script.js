@@ -16,7 +16,23 @@ $(document).ready(function() {
     $('.mobileNav').click(function() {
         $('.nav--hidden').slideToggle("slow")
     });
+    var imageup = document.getElementsByClassName("parallax");
+    new simpleParallax(imageup, {
+        overflow: true,
+    });
+    var imagert = document.getElementsByClassName('parallaxRt');
+    new simpleParallax(imagert, {
+        overflow: true,
+        orientation: 'right'
+    });
+    var imagelt = document.getElementsByClassName('parallaxLt');
+    new simpleParallax(imagelt, {
+        overflow: true,
+        orientation: 'left'
+    });
 });
+
+
 
 // $(document).ready(function() {
 //     document.querySelector(".arrow--big").addEventListener("click", function() {

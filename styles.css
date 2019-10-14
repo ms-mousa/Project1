@@ -148,6 +148,7 @@ header {
 }
 
 .mockup__bubble {
+    z-index: 200;
     border-radius: 50%;
     text-transform: uppercase;
     text-align: center;
