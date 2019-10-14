@@ -6,4 +6,4 @@ He was humble enough to share this for free online.
 
 Below you can find the exported png from the PSD he provided. I used the PSD as refernece and tried to bring it to life by adding the parallax effect. 
 
-![psd design](./img/Fun Weather App.png)
+![psd design](https://github.com/ms-mousa/Project1/blob/master/img/Fun%20Weather%20App.png)
