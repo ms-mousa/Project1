@@ -108,6 +108,10 @@ header {
     width: 50%;
 }
 
+.mobileNav {
+    display: none;
+}
+
 
 /* setup the mockup block */
 
@@ -127,6 +131,11 @@ header {
     width: 25vw;
     max-width: 250px;
     min-width: 200px;
+}
+
+.mockup__img img {
+    width: 20vw;
+    max-width: 350px;
 }
 
 .mockup__con1 {
@@ -544,7 +553,7 @@ header {
 
 .con__screens img {
     width: 100%;
-    min-width: 500px;
+    min-width: 450px;
     height: auto;
 }
 
@@ -590,12 +599,18 @@ footer {
     text-align: right;
 }
 
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 731px) {
     * {
         font-size: 12px;
     }
     header {
         width: 100%;
+    }
+    .mobileNav {
+        display: initial;
+        position: absolute;
+        top: 15px;
+        right: 2rem;
     }
     .topBar {
         background: #353854;
@@ -631,11 +646,6 @@ footer {
     .topBar__social {
         display: none;
     }
-    .mobileNav {
-        position: absolute;
-        top: 15px;
-        right: 2rem;
-    }
     /* styles for banners */
     .action {
         display: none;
@@ -659,6 +669,7 @@ footer {
         width: 60vw;
         height: 90vh;
         align-items: center;
+        justify-content: center;
         display: flex;
     }
     .mockup__img img {
@@ -669,6 +680,10 @@ footer {
     .screencon {
         flex-direction: column;
         width: 100%;
+    }
+    .fetur__point {
+        align-items: center;
+        justify-content: center;
     }
     .screencon {
         align-items: center;
@@ -739,8 +754,12 @@ footer {
         display: block;
         margin: 0 auto;
     }
+    .con__screens {
+        align-self: center;
+    }
     .con__screens img {
         min-width: initial;
+        max-width: 400px;
     }
     /* footer styles for mobile */
     .footer__1 {
@@ -754,5 +773,98 @@ footer {
         padding-top: 20px;
         border-top: 2px solid #c8c8c8a8;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 730px) and (min-height: 300px) {
+    .mockup__img img {
+        max-width: 200px;
+    }
+    .mockup__con1 {
+        right: 20vw;
+    }
+    .mockup__con {
+        left: 20vw;
+    }
+    .footer__copyrights {
+        justify-self: center;
+        border-top: 2px solid #c8c8c8a8;
+        text-align: center;
+    }
+}
+
+
+/* tablet view */
+
+@media screen and (min-width: 732px) and (max-width: 900px) {
+    header {
+        width: 100vw;
+    }
+    .mockup__img img {
+        min-width: 250px;
+    }
+    .mobileNav {
+        display: initial;
+        position: absolute;
+        top: 15px;
+        right: 2rem;
+    }
+    .topBar {
+        background: #353854;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .nav--hidden {
+        display: none;
+    }
+    .nav--hidden:active {
+        background: #648cff;
+    }
+    .topBar {
+        justify-content: space-around;
+        margin-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    .topBar__nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 8px;
+    }
+    .topBar__nav * {
+        text-align: center;
+        width: 100%;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        padding: 0.3rem 0;
+        border-top: 1px solid grey;
+    }
+    .topBar__social {
+        display: none;
+    }
+    .screen {
+        width: 90vw;
+    }
+    .screencon {
+        widows: 100vw;
+    }
+    footer .topBar__nav {
+        display: none;
+    }
+    .footer__1 {
+        justify-content: center;
+    }
+    .dwn {
+        max-height: 900px;
+        height: 60vh;
+    }
+    .dwn__con {
+        width: 90vw;
+        height: 60vh;
+    }
+    .footer__con {
+        height: 20vh;
     }
 }
