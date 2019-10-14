@@ -56,7 +56,6 @@ a {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    overflow: scroll;
     height: 105vh;
     max-height: 900px;
 }
@@ -126,7 +125,7 @@ header {
     padding-left: 10px;
     margin: 0 auto;
     width: 25vw;
-    max-width: 300px;
+    max-width: 250px;
     min-width: 200px;
 }
 
@@ -290,6 +289,7 @@ header {
 
 .points3 {
     width: 100%;
+    height: 100%;
     display: flex;
 }
 
@@ -393,6 +393,14 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
+}
+
+.screencon__img {
+    width: 70%;
+}
+
+.screencon__img img {
+    width: 100%;
 }
 
 .screencon__text {
@@ -581,4 +589,112 @@ footer {
     padding-top: 20px;
     border-top: 2px solid #c8c8c8a8;
     text-align: right;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    * {
+        font-size: 11px;
+    }
+    header {
+        width: 100%;
+    }
+    .topBar {
+        background: #353854;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .nav--hidden {
+        display: none;
+    }
+    .nav--hidden:active {
+        background: #648cff;
+    }
+    .topBar {
+        margin-bottom: 20px;
+    }
+    .topBar__nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 8px;
+    }
+    .topBar__nav * {
+        text-align: center;
+        width: 100%;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        padding: 0.3rem 0;
+        border-top: 1px solid grey;
+    }
+    .topBar__social {
+        display: none;
+    }
+    .mobileNav {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    /* styles for banners */
+    .action {
+        display: none;
+    }
+    .banner {
+        flex-direction: column;
+    }
+    .action {
+        order: 2;
+    }
+    .mockup {
+        width: 100%;
+    }
+    .mockup__con,
+    .mockup__con1 {
+        position: absolute;
+    }
+    .mockup__con {
+        left: 5vw;
+    }
+    .mockup__con1 {
+        right: 5vw;
+    }
+    .mockup__img {
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+    }
+    .mockup__img img {
+        width: 100%;
+    }
+    .points3,
+    .imgcon,
+    .screencon {
+        flex-direction: column;
+        width: 100%;
+    }
+    .imgcon {
+        overflow: hidden;
+    }
+    .imgcon__arrow {
+        display: none;
+    }
+    .imgcon__img {
+        transform-origin: 50% 0%;
+        transform: scale(0.7);
+    }
+    .screencon__img {
+        width: 100%;
+    }
+    .screencon__text {
+        width: 100%;
+        padding: 20px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .order2 {
+        order: initial;
+    }
+    .dwn,
+    footer {
+        display: none;
+    }
 }

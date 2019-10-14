@@ -13,6 +13,9 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
     $('.scrll--shadow').css({ "animation": "bounce 2s infinite" });
+    $('.mobileNav').click(function() {
+        $('.nav--hidden').slideToggle("slow")
+    });
 });
 
 // $(document).ready(function() {
