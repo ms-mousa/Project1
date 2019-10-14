@@ -282,9 +282,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 5vh auto;
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding: 5vw 0;
 }
 
 .points3 {
@@ -462,7 +462,6 @@ header {
 
 .reviews {
     display: flex;
-    flex: row;
     margin: 30px auto;
 }
 
@@ -593,7 +592,7 @@ footer {
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
     * {
-        font-size: 11px;
+        font-size: 12px;
     }
     header {
         width: 100%;
@@ -611,6 +610,9 @@ footer {
     }
     .topBar {
         margin-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
     }
     .topBar__nav {
         width: 100%;
@@ -632,7 +634,7 @@ footer {
     .mobileNav {
         position: absolute;
         top: 15px;
-        right: 10px;
+        right: 2rem;
     }
     /* styles for banners */
     .action {
@@ -640,27 +642,24 @@ footer {
     }
     .banner {
         flex-direction: column;
-    }
-    .action {
-        order: 2;
+        margin-top: 5.5rem;
     }
     .mockup {
         width: 100%;
     }
-    .mockup__con,
-    .mockup__con1 {
-        position: absolute;
-    }
     .mockup__con {
+        position: absolute;
         left: 5vw;
     }
     .mockup__con1 {
+        position: absolute;
         right: 5vw;
     }
     .mockup__img {
         width: 60vw;
+        height: 90vh;
+        align-items: center;
         display: flex;
-        justify-content: center;
     }
     .mockup__img img {
         width: 100%;
@@ -671,18 +670,22 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-    .imgcon {
-        overflow: hidden;
+    .screencon {
+        align-items: center;
     }
     .imgcon__arrow {
         display: none;
     }
-    .imgcon__img {
-        transform-origin: 50% 0%;
-        transform: scale(0.7);
+    .img1,
+    .img2,
+    .img3 {
+        display: none;
     }
-    .screencon__img {
-        width: 100%;
+    .imgcon {
+        width: 100vw;
+        height: 70vw;
+        background: url(./img/centerimg.png) no-repeat center;
+        background-size: contain;
     }
     .screencon__text {
         width: 100%;
@@ -693,8 +696,63 @@ footer {
     .order2 {
         order: initial;
     }
-    .dwn,
-    footer {
+    .screen {
+        width: 90vw;
+    }
+    /* styling for vertical review section */
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .quote {
+        width: 80%;
+        margin: 0;
+    }
+    /* styles for download section */
+    .dwn {
+        width: 100vw;
+        background: #648cff;
+        overflow: inherit;
+        height: 100vh;
+        min-height: 700px;
+        max-height: 750px;
+    }
+    .dwn__con {
+        width: 100vw;
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .action--text {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .action--moto {
+        text-align: center;
+    }
+    .con__action {
+        padding: 0 20px;
+    }
+    .con__action img {
+        padding: 10px 0px;
+        display: block;
+        margin: 0 auto;
+    }
+    .con__screens img {
+        min-width: initial;
+    }
+    /* footer styles for mobile */
+    .footer__1 {
         display: none;
+    }
+    .footer__con {
+        height: 10vh;
+        width: 100vw;
+    }
+    .footer__copyrights {
+        padding-top: 20px;
+        border-top: 2px solid #c8c8c8a8;
+        text-align: center;
     }
 }
